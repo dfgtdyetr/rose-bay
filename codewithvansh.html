@@ -1,42 +1,126 @@
 <!DOCTYPE html>
-<!-- saved from url=(0049)https://rose-day-by-codewithvansh.netlify.app/new -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>codewithvansh</title>
-    <link rel="stylesheet" href="./new.css">
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: "Varela Round", "Quicksand", sans-serif;
+            background: url(https://i.pinimg.com/1200x/bf/dc/bd/bfdcbde9b1e8336e0a5f5b86f60d2b84.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .wrap {
+            text-align: center;
+            width: 100%;
+        }
+        h1 {
+            font-size: 3em;
+            color: #fdfdfd;
+            margin-bottom: 15px;
+        }
+        .postcard-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .postcard, .postcard1 {
+            width: 90%;
+            max-width: 800px;
+            height: auto;
+            background: rgba(255, 255, 255, 0.101);
+            border-radius: 10px;
+            padding: 2em;
+            box-shadow: 0.8em 0.8em 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.5s ease;
+        }
+        .postcard1 {
+            background: #f594b862;
+            position: absolute;
+            filter: blur(2px);
+            z-index: -1;
+            transform: rotate(2.5deg);
+        }
+        .postcard:hover {
+            transform: rotate(0deg);
+        }
+        p {
+            font-size: 1.2em;
+            font-family: cursive;
+            font-weight: 540;
+            color: white;
+        }
+        p span {
+            font-size: 1.5em;
+            font-weight: 600;
+            text-shadow: 0 0 20px rgb(255, 255, 255);
+            color: #800020;
+        }
+        .ullu {
+            font-size: 1.3em;
+            text-shadow: 0 0 20px rgb(255, 255, 255);
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: white;
+            font-size: 1em;
+            letter-spacing: 1px;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            .postcard, .postcard1 {
+                padding: 1.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+            p span {
+                font-size: 1.2em;
+            }
+            .ullu {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
     <div class="wrap">
-      <h1>For You 💖</h1>
-      <div class="postcard1"></div>
-      <div class="postcard">
-        <div class="letter"></div>
-        <p>
-          <span>My Dear,</span>
-          <br>
-          On this Rose Day, each petal symbolizes my admiration <br>for you.
-          Your presence colors my world with joy and warmth.Like a rose in full
-          bloom, your beauty captivates my heart. The red roses reflect the
-          passion that burns for you, while the white ones signify the purity of
-          our dear. In the garden of life, you're my most cherished blossom.
-          Thank you for being my source of dear and inspiration. Our journey
-          together is as sweet as the fragrance of roses. Happy Rose Day, my
-          dear. Here's to many more petals of shared laughter and enduring dear.
-          <br>
-          <span class="ullu">
-            Forever Yours,
-            <br>
-            Arun</span>
-        </p>
-        <div class="address">
+        <h1>For You 💖</h1>
+        <div class="postcard-container">
+            <div class="postcard1"></div>
+            <div class="postcard">
+                <p>
+                    <span>My Dear,</span><br>
+                    On this Rose Day, each petal symbolizes my admiration for you. Your presence colors my world with joy and warmth.
+                    Like a rose in full bloom, your beauty captivates my heart. The red roses reflect the passion that burns for you,
+                    while the white ones signify the purity of our dear. In the garden of life, you're my most cherished blossom.
+                    Thank you for being my source of dear and inspiration. Our journey together is as sweet as the fragrance of roses.
+                    Happy Rose Day, my dear. Here's to many more petals of shared laughter and enduring dear.<br>
+                    <span class="ullu">Forever Yours,<br>Arun</span>
+                </p>
+            </div>
         </div>
-      </div>
     </div>
-
     <footer>
-      <p>crafted by @arun</p>
+        <p>crafted by @arun</p>
     </footer>
-  
-
-</body></html>
+</body>
+</html>
